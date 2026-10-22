@@ -1,25 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import os
 
-n_bits = 3
-v_ref = 5.0
-levels = 2**n_bits
-step = v_ref / levels
+fig, ax = plt.subplots(figsize=(6, 4))
+t = np.linspace(0, 1, 500)
+signal = np.sin(2 * np.pi * 5 * t)
+quantized = np.round(signal * 4) / 4
 
-t = np.linspace(0, 1, 1000)
-v_in = v_ref * (0.5 + 0.4 * np.sin(2 * np.pi * 2 * t))
-v_quant = np.floor(v_in / step) * step
+ax.plot(t, signal, label='Analog Input', color='blue')
+ax.step(t, quantized, label='Quantized Output', color='red', where='post')
+ax.set_title('ADC Performance')
+ax.set_xlabel('Time (s)')
+ax.set_ylabel('Amplitude')
+ax.grid(True)
+ax.legend()
 
-plt.figure(figsize=(8, 5))
-plt.plot(t, v_in, label='Analog Input', color='blue')
-plt.step(t, v_quant, label='Quantized Output (3-bit ADC)', color='red', where='post')
-plt.xlabel('Time (s)')
-plt.ylabel('Voltage (V)')
-plt.title('ADC Quantization Performance')
-plt.legend()
-plt.grid(True)
-
-output_path = os.path.expanduser('~/Downloads/figs/ADC_Performance.png')
-plt.savefig(output_path)
-plt.close()
+plt.tight_layout()
+plt.savefig('../figs/ADC_Performance.png', bbox_inches='tight')
+plt.close(fig)
