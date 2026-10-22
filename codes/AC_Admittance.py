@@ -23,4 +23,4 @@ ax2.set_ylabel('Phase (degrees)')
 ax2.grid(True, which='both', linestyle=':', alpha=0.6)
 
 plt.tight_layout()
-plt.savefig('figs/AC_Admittance.png')
+plt.savefig('../figs/AC_Admittance.png')
