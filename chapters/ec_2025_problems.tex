@@ -232,13 +232,11 @@ Consider the discrete-time system in the given system diagram with input $x\sbra
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
         blk/.style={draw,minimum width=1.1cm,minimum height=0.7cm,inner sep=2pt},
         sm/.style={draw,circle,minimum size=0.5cm,inner sep=0pt}]
-      % main chain
       \node (in)  at (0,0)   {$x[n]$};
       \node[blk] (h1) at (1.5,0) {$h_1[n]$};
       \node[sm]  (s1) at (2.9,0) {$+$};
@@ -250,12 +248,10 @@ Consider the discrete-time system in the given system diagram with input $x\sbra
       \draw[->] (s1.east)--(h2.west);
       \draw[->] (h2.east)--(s2.west);
       \draw[->] (s2.east)--(out.west);
-      % impulse inputs
       \node (b1) at (2.9,-1.2) {$b\,\delta[n]$};
       \node (b2) at (5.7,-1.2) {$-b\,\delta[n]$};
       \draw[->] (b1.north)--(s1.south);
       \draw[->] (b2.north)--(s2.south);
-      % labels and dashed box
       \node at (1.5,-0.65) {Subsystem 1};
       \node at (4.3,-0.65) {Subsystem 2};
       \draw[dashed] (0.75,0.7) rectangle (6.3,-1.65);
@@ -353,14 +349,11 @@ Let $i_C$, $i_L$ and $i_R$ be the currents through the capacitor, inductor and r
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth]
-      % top and bottom rails
       \draw (0,3)--(5.2,3);
       \draw (0,0)--(5.2,0);
-      % voltage source
       \draw (0,3)--(0,2);
       \draw (0,1)--(0,0);
       \draw (0,1.5) circle (0.5);
@@ -368,12 +361,10 @@ Let $i_C$, $i_L$ and $i_R$ be the currents through the capacitor, inductor and r
       \node at (0.33,2.3) {$+$};
       \node at (0.33,0.7) {$-$};
       \node[left] at (-0.6,1.5) {$1\angle 90^\circ$ V};
-      % junction dots
       \fill (1.8,3) circle (1.2pt);
       \fill (3.5,3) circle (1.2pt);
       \fill (1.8,0) circle (1.2pt);
       \fill (3.5,0) circle (1.2pt);
-      % capacitor branch
       \draw (1.8,3)--(1.8,1.7);
       \draw (1.5,1.7)--(2.1,1.7);
       \draw (1.5,1.3)--(2.1,1.3);
@@ -381,14 +372,12 @@ Let $i_C$, $i_L$ and $i_R$ be the currents through the capacitor, inductor and r
       \node[right] at (2.1,1.5) {$j0.25$ S};
       \draw[->] (1.3,2.7)--(1.3,2.1);
       \node[left] at (1.3,2.4) {$i_C$};
-      % inductor branch
       \draw (3.5,3)--(3.5,2.4);
       \draw[decorate,decoration={coil,aspect=0.5,segment length=3.5pt,amplitude=3.5pt}] (3.5,2.4)--(3.5,0.6);
       \draw (3.5,0.6)--(3.5,0);
       \node[right] at (3.75,1.5) {$-j0.1$ S};
       \draw[->] (3.1,2.7)--(3.1,2.1);
       \node[left] at (3.1,2.4) {$i_L$};
-      % resistor branch
       \draw (5.2,3)--(5.2,2.4);
       \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=3pt}] (5.2,2.4)--(5.2,0.6);
       \draw (5.2,0.6)--(5.2,0);
@@ -411,7 +400,7 @@ $\underline{V}=1\angle90^\circ$ V across it. Using $\underline{I}=\underline{Y}\
 \underline{I}_R&=(0.2)(1\angle90^\circ)
 =0.2\angle90^\circ\text{ A}.
 \end{align}
-Therefore, the correct choice is **Option (A)**. The original numerical solution is correct.
+Therefore, the correct choice is **Option (A)**.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
@@ -479,21 +468,17 @@ A full adder and an XOR gate are used to design a digital circuit with inputs $X
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth]
-      % full adder
       \draw (-1.2,0)--(1.2,0)--(0.8,-1)--(-0.8,-1)--cycle;
       \node[align=center] at (0,-0.5) {full\\adder};
-      % inputs
       \node at (-0.8,2.55) {$X$};
       \node at (0.2,2.55) {$Y$};
       \node at (0.6,2.55) {$Z$};
       \draw[->] (-0.8,2.35)--(-0.8,0);
       \draw (0.2,2.35)--(0.2,1.26);
       \draw (0.6,2.35)--(0.6,1.26);
-      % XOR gate (pointing down)
       \begin{scope}[shift={(0.4,1.0)}]
         \draw (-0.4,0.35) .. controls (-0.2,0.2) and (0.2,0.2) .. (0.4,0.35);
         \draw (-0.4,0.35) .. controls (-0.4,-0.05) and (-0.15,-0.3) .. (0,-0.4);
@@ -501,10 +486,8 @@ A full adder and an XOR gate are used to design a digital circuit with inputs $X
         \draw (-0.4,0.47) .. controls (-0.2,0.32) and (0.2,0.32) .. (0.4,0.47);
       \end{scope}
       \draw[->] (0.4,0.6)--(0.4,0);
-      % Z to carry-in
       \fill (0.6,1.8) circle (1.2pt);
       \draw[->] (0.6,1.8)--(1.7,1.8)--(1.7,-0.5)--(1.0,-0.5);
-      % output
       \draw[->] (0,-1)--(0,-1.8);
       \draw (-0.08,-1.48)--(0.08,-1.32);
       \node[right] at (0.05,-1.4) {\scriptsize 2};
@@ -598,7 +581,6 @@ Consider the unity-negative-feedback system in the given unity-negative-feedback
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
@@ -626,11 +608,9 @@ Consider the unity-negative-feedback system in the given unity-negative-feedback
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[x=1.6cm,y=1.6cm,font=\footnotesize,>=Stealth]
-      % dashed grid lines
       \foreach \x in {-4,-3,-2,-1} {\draw[dashed,gray] (\x,-1.2)--(\x,1);}
       \draw[dashed,gray] (-4.6,1)--(-1,1);
       \draw[dotted,gray] (-4.6,0)--(-4,0);
-      % axes
       \draw[->] (-4.6,-1.2)--(-0.6,-1.2);
       \draw[->] (-4.6,-1.2)--(-4.6,1.4);
       \foreach \x in {-4,-3,-2,-1} {
@@ -643,24 +623,20 @@ Consider the unity-negative-feedback system in the given unity-negative-feedback
       \node[left] at (-4.6,-1) {$-j1$};
       \node[rotate=90] at (-5.35,0) {Imaginary axis};
       \node at (-2.5,-1.75) {Real axis};
-      % root locus branches
       \draw[thick] (-4,0)--(-3,0);
       \draw[thick] (-2,0)--(-1,0);
       \draw[thick] (-2.5,0) circle (0.866);
-      % direction arrows
       \draw[thick,-{Stealth[length=2mm]}] (-3.5,0)--(-3.8,0);
       \draw[thick,-{Stealth[length=2mm]}] (-3.3,0)--(-3.12,0);
       \draw[thick,-{Stealth[length=2mm]}] (-1.9,0)--(-1.72,0);
       \draw[thick,-{Stealth[length=2mm]}] (-1.1,0)--(-1.28,0);
       \draw[thick,-{Stealth[length=2mm]}] (-2.3,0.866)--(-2.5,0.866);
       \draw[thick,-{Stealth[length=2mm]}] (-2.3,-0.866)--(-2.5,-0.866);
-      % open-loop zeros (o) and poles (x)
       \foreach \x in {-4,-3} {\draw[thick,fill=white] (\x,0) circle (2.5pt);}
       \foreach \x in {-2,-1} {
         \draw[thick] (\x,0)+(-2.5pt,-2.5pt)--+(2.5pt,2.5pt);
         \draw[thick] (\x,0)+(-2.5pt,2.5pt)--+(2.5pt,-2.5pt);
       }
-      % legend
       \draw (-4.5,-2.0) rectangle (-2.7,-2.55);
       \draw[thick,fill=white] (-4.35,-2.14) circle (2.5pt);
       \node[anchor=west,font=\scriptsize] at (-4.25,-2.14) {Open loop zeros};
@@ -870,16 +846,13 @@ The following code verifies the solution through a plot
 All components in the bandpass filter of the given bandpass filter are ideal. The lower $-3$ dB frequency is 1 MHz. The upper $-3$ dB frequency (in MHz, rounded off to the nearest integer) is \underline{\hspace{1cm}}.
 \hfill (EC~2025)
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
         zz/.style={decorate,decoration={zigzag,segment length=4pt,amplitude=3pt}}]
-      % op-amp
       \draw (3,1)--(3,-1)--(5,0)--cycle;
       \node at (3.25,0.5) {$-$};
       \node at (3.25,-0.5) {$+$};
-      % input branch: vs - R - 10C - inverting input
       \draw (0,0.5)--(0.4,0.5);
       \draw[zz] (0.4,0.5)--(1.3,0.5);
       \draw (1.3,0.5)--(1.65,0.5);
@@ -890,13 +863,11 @@ All components in the bandpass filter of the given bandpass filter are ideal. Th
       \node[left] at (-0.1,0.5) {$v_s$};
       \node at (0.85,0.9) {$R$};
       \node at (1.75,0.95) {$10C$};
-      % feedback: 2R
       \fill (2.5,0.5) circle (1.2pt);
       \draw (2.5,0.5)--(2.5,2.4)--(3.2,2.4);
       \draw[zz] (3.2,2.4)--(4.5,2.4);
       \draw (4.5,2.4)--(5.2,2.4)--(5.2,0);
       \node at (3.85,2.8) {$2R$};
-      % feedback: 0.1C
       \fill (2.5,1.5) circle (1.2pt);
       \fill (5.2,1.5) circle (1.2pt);
       \draw (2.5,1.5)--(3.75,1.5);
@@ -904,12 +875,10 @@ All components in the bandpass filter of the given bandpass filter are ideal. Th
       \draw (3.95,1.3)--(3.95,1.7);
       \draw (3.95,1.5)--(5.2,1.5);
       \node at (3.85,1.95) {$0.1C$};
-      % output
       \draw (5,0)--(5.7,0);
       \fill (5.2,0) circle (1.2pt);
       \draw[fill=white] (5.7,0) circle (1.5pt);
       \node[right] at (5.8,0) {$v_o$};
-      % grounded non-inverting input
       \draw (3,-0.5)--(2.5,-0.5)--(2.5,-1.0);
       \draw (2.3,-1.0)--(2.7,-1.0);
       \draw (2.38,-1.1)--(2.62,-1.1);
@@ -977,7 +946,6 @@ Which one of the following options is correct?
     \item Both (i) and (ii) are TRUE
     \end{multicols}
 \end{enumerate}
-
 
 \begin{figure}[H]
     \centering
@@ -1131,11 +1099,9 @@ In the circuit of the given circuit, $M_1$ is an ideal AC voltmeter and $M_2$ is
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth]
-      % voltage source
       \draw (0,0)--(0,1);
       \draw (0,2)--(0,3);
       \draw (0,1.5) circle (0.5);
@@ -1143,26 +1109,21 @@ In the circuit of the given circuit, $M_1$ is an ideal AC voltmeter and $M_2$ is
       \node at (0.33,2.3) {$+$};
       \node at (0.33,0.7) {$-$};
       \node[left] at (-0.6,1.5) {$v_s(t)$};
-      % LTI box
       \draw (0,3)--(1,3);
       \draw (0,0)--(1,0);
       \draw (1,-0.3) rectangle (2.8,3.3);
       \node[align=center,text width=1.5cm] at (1.9,1.5) {Linear Time Invariant Circuit};
-      % top and bottom wires to the right of the box
       \draw (2.8,3)--(4.6,3);
       \draw (2.8,0)--(6.4,0);
       \fill (3.8,3) circle (1.2pt);
       \fill (3.8,0) circle (1.2pt);
-      % voltmeter M1
       \node[draw,circle,minimum size=0.8cm,inner sep=0pt] (M1) at (3.8,1.5) {$M_1$};
       \draw (3.8,3)--(M1.north);
       \draw (M1.south)--(3.8,0);
       \node at (4.12,2.35) {$+$};
       \node at (4.12,0.65) {$-$};
-      % ammeter M2
       \node[draw,circle,minimum size=0.8cm,inner sep=0pt] (M2) at (5.0,3) {$M_2$};
       \draw (M2.east)--(6.4,3)--(6.4,2.8);
-      % series branch: 5 ohm, variable C, 1 H
       \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=3pt}] (6.4,2.8)--(6.4,2.0);
       \draw (6.4,2.0)--(6.4,1.65);
       \draw (6.1,1.65)--(6.7,1.65);
@@ -1230,12 +1191,10 @@ The $Z$-parameter matrix (each entry in Ohms) of the network in the given networ
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
         zz/.style={decorate,decoration={zigzag,segment length=4pt,amplitude=3pt}}]
-      % top rail with series resistors
       \draw (0,2)--(0.5,2);
       \draw[zz] (0.5,2)--(1.4,2);
       \draw (1.4,2)--(3.0,2);
@@ -1243,30 +1202,24 @@ The $Z$-parameter matrix (each entry in Ohms) of the network in the given networ
       \draw (3.9,2)--(5.5,2);
       \draw[zz] (5.5,2)--(6.4,2);
       \draw (6.4,2)--(7.0,2);
-      % bottom rail
       \draw (0,0)--(7.0,0);
-      % shunt resistors
       \draw (2.2,2)--(2.2,1.45);
       \draw[zz] (2.2,1.45)--(2.2,0.55);
       \draw (2.2,0.55)--(2.2,0);
       \draw (4.7,2)--(4.7,1.45);
       \draw[zz] (4.7,1.45)--(4.7,0.55);
       \draw (4.7,0.55)--(4.7,0);
-      % dots
       \foreach \p in {(0,2),(0,0),(7,2),(7,0),(2.2,2),(2.2,0),(4.7,2),(4.7,0)}
         \fill \p circle (1.5pt);
-      % resistor labels
       \node at (0.95,1.6) {$2\,\Omega$};
       \node at (3.45,1.6) {$2\,\Omega$};
       \node at (5.95,1.6) {$2\,\Omega$};
       \node[right] at (2.35,1.0) {$2\,\Omega$};
       \node[right] at (4.85,1.0) {$2\,\Omega$};
-      % currents
       \draw[->] (0.15,2.3)--(0.75,2.3);
       \node at (0.45,2.55) {$I_1$};
       \draw[->] (6.85,2.3)--(6.25,2.3);
       \node at (6.55,2.55) {$I_2$};
-      % port voltages
       \draw[<->] (-0.35,0.15)--(-0.35,1.85);
       \node[left] at (-0.4,1.0) {$V_1$};
       \node at (-0.6,1.7) {$+$};
@@ -1306,16 +1259,10 @@ The network is reciprocal and symmetric, so from \eqref{eq:F-zdef},
 \vec{Z}&=\myvec{\frac{10}{3}&\frac{2}{3}\\\frac{2}{3}&\frac{10}{3}}\ \Omega
 \end{align}
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Opamp_Gain.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Two_Port.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/Opamp_Gain.png}
-    \caption{Opamp Gain}
-    \label{fig:EC2025-21-opamp-gain}
-\end{figure}
 
 \item
 A source transmits a symbol $S$ taking values uniformly at random from $\cbrak{-2,0,2}$. The receiver obtains $Y=S+N$, where $N$ is a zero-mean Gaussian random variable independent of $S$, and uses the maximum-likelihood decoder. Suppose the probability of symbol error is $P_e=\alpha\pr{N>1}$. What is $\alpha$?
@@ -1345,13 +1292,13 @@ so $\alpha=\frac{4}{3}$.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Smith_Chart.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/ML_Decoder.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/Smith_Chart.png}
-    \caption{Smith Chart}
-    \label{fig:EC2025-22-smith-chart}
+    \includegraphics[width=0.90\linewidth]{figs/ML_Decoder.png}
+    \caption{ML Decoder}
+    \label{fig:EC2025-22-ml-decoder}
 \end{figure}
 
 \item
@@ -1394,10 +1341,16 @@ E\sbrak{f\brak{t}^2}&=\sum_{n=1}^{N}p\brak{t-nT}
 \end{align}
 which depends on $t$, so (ii) is false.
 
-The following code verifies the solution.
+The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Wave_Propagation.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Random_Process.py}}}@*)
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Random_Process.png}
+    \caption{Random Process}
+    \label{fig:EC2025-23-random-process}
+\end{figure}
 
 \item
 A 10-bit analog-to-digital converter (ADC) has a sampling frequency of 1 MHz and a full-scale voltage of 3.3 V. For an input sinusoid of frequency 500 kHz, the maximum SNR (in dB, two decimal places) and the data rate (in Mbps) at the ADC output are \underline{\hspace{1cm}}, respectively.
@@ -1426,13 +1379,13 @@ R_b&=f_sN
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/PN_Junction.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/ADC_Performance.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/PN_Junction.png}
-    \caption{PN Junction}
-    \label{fig:EC2025-24-pn-junction}
+    \includegraphics[width=0.90\linewidth]{figs/ADC_Performance.png}
+    \caption{ADC Performance}
+    \label{fig:EC2025-24-adc-performance}
 \end{figure}
 
 \item
@@ -1447,12 +1400,10 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
     \end{multicols}
 \end{enumerate}
 
-
 \begin{figure}[H]
     \centering
     \resizebox{\linewidth}{!}{%
     \begin{tikzpicture}[font=\footnotesize,>=Stealth]
-      % ---------- MUX 1 ----------
       \begin{scope}[shift={(0,0.4)}]
         \draw (0,1)--(0.9,0.6)--(0.9,-0.6)--(0,-1)--cycle;
         \node at (0.17,0.6) {\scriptsize $1$};
@@ -1465,7 +1416,6 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
       \draw (0.45,-0.4)--(0.45,-1.1);
       \node at (0.45,-1.35) {$SEL$};
       \draw[->] (0.9,0.4)--(2.0,0.4);
-      % ---------- FF 1 ----------
       \draw (2.0,-0.8) rectangle (3.2,0.8);
       \node at (2.2,0.4) {$D$};
       \node at (3.0,0.4) {$Q$};
@@ -1473,9 +1423,7 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
       \draw (2.45,-0.8)--(2.6,-0.58)--(2.75,-0.8);
       \draw (2.6,-0.8)--(2.6,-1.5);
       \node at (2.6,-1.75) {$CLK$};
-      % Q1 to MUX 2 input 1
       \draw (3.2,0.4)--(3.8,0.4)--(3.8,1.0)--(4.6,1.0);
-      % ---------- MUX 2 ----------
       \begin{scope}[shift={(4.6,0.4)}]
         \draw (0,1)--(0.9,0.6)--(0.9,-0.6)--(0,-1)--cycle;
         \node at (0.17,0.6) {\scriptsize $1$};
@@ -1486,7 +1434,6 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
       \draw (5.05,-0.4)--(5.05,-1.1);
       \node at (5.05,-1.35) {$SEL$};
       \draw[->] (5.5,0.4)--(6.4,0.4);
-      % ---------- FF 2 ----------
       \draw (6.4,-0.8) rectangle (7.6,0.8);
       \node at (6.6,0.4) {$D$};
       \node at (7.4,0.4) {$Q$};
@@ -1495,7 +1442,6 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
       \draw (7.0,-0.8)--(7.0,-1.5);
       \node at (7.0,-1.75) {$CLK$};
       \draw (7.6,0.4)--(8.0,0.4);
-      % ---------- XOR gate ----------
       \begin{scope}[shift={(8.9,-2.2)}]
         \draw (0,0.4) .. controls (0.5,0.4) and (0.8,0.2) .. (0.95,0);
         \draw (0.95,0) .. controls (0.8,-0.2) and (0.5,-0.4) .. (0,-0.4);
@@ -1506,7 +1452,6 @@ A positive-edge-triggered sequential circuit is shown in the given sequential ci
       \draw (3.2,-0.4)--(3.55,-0.4)--(3.55,-2.4)--(9.0,-2.4);
       \draw (9.85,-2.2)--(10.5,-2.2);
       \node[right] at (10.5,-2.2) {$Y$};
-      % ---------- timing diagram ----------
       \begin{scope}[shift={(2.2,-6.2)}]
         \foreach \x/\l in {1/0,2/1,3/2,4/3} {
           \draw[dashed] (\x,2.5)--(\x,-0.5);
@@ -1550,16 +1495,10 @@ $T_3$&0&1&0&1&1\\
 \end{center}
 The output sequence is $Y=1011$.
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/MOSFET_Characteristics.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Seq_Circuit.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/MOSFET_Characteristics.png}
-    \caption{MOSFET Characteristics}
-    \label{fig:EC2025-25-mosfet-characteristics}
-\end{figure}
 
 \item
 A square metal sheet of $4\text{ m}\times4\text{ m}$ is placed on the $x$--$y$ plane as in the given sheet geometry. If the surface charge density (in $\mu$C/m$^2$) is $\rho_s\brak{x,y}=4\abs{y}$, the total charge (in $\mu$C, rounded off to the nearest integer) on the sheet is \underline{\hspace{1cm}}.
@@ -1572,7 +1511,6 @@ A square metal sheet of $4\text{ m}\times4\text{ m}$ is placed on the $x$--$y$ p
     \item 256
     \end{multicols}
 \end{enumerate}
-
 
 \begin{figure}[H]
     \centering
@@ -1602,10 +1540,16 @@ Q&=\int_{-2}^{2}\int_{-2}^{2}4\abs{y}\,dx\,dy
 &=64\ \mu\text{C}
 \end{align}
 
-The following code verifies the solution.
+The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Counter_Sync.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Sheet_Charge.py}}}@*)
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Sheet_Charge.png}
+    \caption{Sheet Charge}
+    \label{fig:EC2025-26-sheet-charge}
+\end{figure}
 
 \item
 An electric field of $0.01$ V/m is applied along the length of a copper wire of circular cross-section with diameter 1 mm. Copper has conductivity $5.8\times10^7$ S/m. The current (in Amperes, two decimal places) through the wire is \underline{\hspace{1cm}}.
@@ -1636,16 +1580,10 @@ I&=JA
 &\approx0.46\text{ A}
 \end{align}
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Laplace_ROC.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Wire_Current.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/Laplace_ROC.png}
-    \caption{Laplace ROC}
-    \label{fig:EC2025-27-laplace-roc}
-\end{figure}
 
 \item
 Consider a non-negative function $f\brak{x}$, continuous and bounded on $\sbrak{2,8}$. Let $M$ and $m$ be its maximum and minimum on the interval. Choose the combination(s) of $\alpha$ and $\beta$ for which
@@ -1676,13 +1614,13 @@ The inequality is guaranteed when $\beta\le6m$ and $\alpha\ge6M$. Only (A) satis
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/ADC_Performance.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Integral_Bound.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/ADC_Performance.png}
-    \caption{ADC Performance}
-    \label{fig:EC2025-28-adc-performance}
+    \includegraphics[width=0.90\linewidth]{figs/Integral_Bound.png}
+    \caption{Integral Bound}
+    \label{fig:EC2025-28-integral-bound}
 \end{figure}
 
 \item
@@ -1715,13 +1653,13 @@ and (D) is false.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Signal_Flow_Graph.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Contour_Integral.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/Signal_Flow_Graph.png}
-    \caption{Signal Flow Graph}
-    \label{fig:EC2025-29-signal-flow-graph}
+    \includegraphics[width=0.90\linewidth]{figs/Contour_Integral.png}
+    \caption{Contour Integral}
+    \label{fig:EC2025-29-contour-integral}
 \end{figure}
 
 \item
@@ -1758,13 +1696,13 @@ So (B) is true, while (A), (C) and (D) are false.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Noise_PSD.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/State_Space.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/Noise_PSD.png}
-    \caption{Noise PSD}
-    \label{fig:EC2025-30-noise-psd}
+    \includegraphics[width=0.90\linewidth]{figs/State_Space.png}
+    \caption{State Space}
+    \label{fig:EC2025-30-state-space}
 \end{figure}
 
 \item
@@ -1795,10 +1733,16 @@ g\brak{0.4}&=1.5219
 \end{align}
 Hence (B) and (C) are true.
 
-The following code verifies the solution.
+The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/BPSK_BER.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Entropy.py}}}@*)
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Entropy.png}
+    \caption{Entropy}
+    \label{fig:EC2025-31-entropy}
+\end{figure}
 
 \item
 Let $f\brak{t}$ be periodic with fundamental period $T_0>0$, and $y\brak{t}=f\brak{\alpha t}$ with $\alpha>1$. Their Fourier series are
@@ -1834,13 +1778,13 @@ Hence (A) and (D) are true.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Antenna_Pattern.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Time_Scaling.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/Antenna_Pattern.png}
-    \caption{Antenna Pattern}
-    \label{fig:EC2025-32-antenna-pattern}
+    \includegraphics[width=0.90\linewidth]{figs/Time_Scaling.png}
+    \caption{Time Scaling}
+    \label{fig:EC2025-32-time-scaling}
 \end{figure}
 
 \item
@@ -1854,7 +1798,6 @@ Consider the system represented by the block diagram in the given block diagram.
     \item graph (D)
     \end{multicols}
 \end{enumerate}
-
 
 \begin{figure}[H]
     \centering
@@ -1877,12 +1820,10 @@ Consider the system represented by the block diagram in the given block diagram.
       \draw[->] (s2.east)--(Y.west);
       \fill (1.0,0) circle (1.2pt);
       \fill (3.7,0) circle (1.2pt);
-      % G2 path
       \draw (1.0,0)--(1.0,1.4);
       \draw[->] (1.0,1.4)--(G2.west);
       \draw (G2.east)--(4.8,1.4);
       \draw[->] (4.8,1.4)--(s2.north);
-      % feedback
       \draw[->] (3.7,0)--(3.7,-1.2)--(0,-1.2)--(s1.south);
       \node at ($(s1.west)+(-0.25,0.22)$) {$+$};
       \node at ($(s1.south)+(0.25,-0.25)$) {$-$};
@@ -1898,7 +1839,6 @@ Consider the system represented by the block diagram in the given block diagram.
     \resizebox{\linewidth}{!}{%
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
         nd/.style={circle,draw,fill=white,inner sep=1.3pt}]
-      % ---------- (A) ----------
       \begin{scope}[shift={(0,0)}]
         \node[nd] (a0) at (0,0) {};
         \node[nd] (a1) at (1.0,0) {};
@@ -1913,7 +1853,6 @@ Consider the system represented by the block diagram in the given block diagram.
         \draw[->] (a2) to[bend left=80,looseness=1.4] node[below]{$-1$} (a1);
         \node at (1.6,-1.5) {(A)};
       \end{scope}
-      % ---------- (B) ----------
       \begin{scope}[shift={(7.2,0)}]
         \node[nd] (b0) at (0,0) {};
         \node[nd] (b1) at (1.0,0) {};
@@ -1930,7 +1869,6 @@ Consider the system represented by the block diagram in the given block diagram.
         \draw[->] (b2) to[bend left=80,looseness=2.0] node[below]{$-1$} (b1);
         \node at (2.0,-1.5) {(B)};
       \end{scope}
-      % ---------- (C) ----------
       \begin{scope}[shift={(0,-3.4)}]
         \node[nd] (c0) at (0,0) {};
         \node[nd] (c1) at (1.0,0) {};
@@ -1945,7 +1883,6 @@ Consider the system represented by the block diagram in the given block diagram.
         \draw[->] (c2) to[bend left=80,looseness=1.4] node[below]{$1$} (c1);
         \node at (1.6,-1.5) {(C)};
       \end{scope}
-      % ---------- (D) ----------
       \begin{scope}[shift={(7.2,-3.4)}]
         \node[nd] (d0) at (0,0) {};
         \node[nd] (d1) at (1.0,0) {};
@@ -1995,13 +1932,13 @@ Only graph (B) represents the system.
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Critically_Damped.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Signal_Flow_Graph.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/Critically_Damped.png}
-    \caption{Critically Damped}
-    \label{fig:EC2025-33-critically-damped}
+    \includegraphics[width=0.90\linewidth]{figs/Signal_Flow_Graph.png}
+    \caption{Signal Flow Graph}
+    \label{fig:EC2025-33-signal-flow-graph}
 \end{figure}
 
 \item
@@ -2020,10 +1957,16 @@ E\sbrak{X}&=E\sbrak{X_1}+E\sbrak{X_2}
 &=7.00
 \end{align}
 
-The following code verifies the solution.
+The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/State_Space.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Dice_Sum.py}}}@*)
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Dice_Sum.png}
+    \caption{Dice Sum}
+    \label{fig:EC2025-34-dice-sum}
+\end{figure}
 
 \item
 Consider the vectors
@@ -2049,13 +1992,13 @@ x^*\vec{a}-\vec{b}&=\myvec{\frac{3\sqrt{2}}{2}\\-\frac{3\sqrt{2}}{2}}
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/TwoPort_Network.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Vector_Projection.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/TwoPort_Network.png}
-    \caption{TwoPort Network}
-    \label{fig:EC2025-35-twoport-network}
+    \includegraphics[width=0.90\linewidth]{figs/Vector_Projection.png}
+    \caption{Vector Projection}
+    \label{fig:EC2025-35-vector-projection}
 \end{figure}
 
 \item
@@ -2092,21 +2035,14 @@ so from \eqref{eq:F-indep} and \eqref{eq:F-mi-zero},
 I\brak{X;Y}&=0.00
 \end{align}
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Source_Entropy.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Mutual_Information.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/Source_Entropy.png}
-    \caption{Source Entropy}
-    \label{fig:EC2025-36-source-entropy}
-\end{figure}
 
 \item
 The diode in the circuit of the given diode circuit is ideal. The input voltage (in Volts) is $V_I=10\sin\brak{100\pi t}$, with $t$ in seconds. The time duration (in ms, two decimal places) for which the diode is forward biased during one period of the input is \underline{\hspace{1cm}}.
 \hfill (EC~2025)
-
 
 \begin{figure}[H]
     \centering
@@ -2116,17 +2052,13 @@ The diode in the circuit of the given diode circuit is ideal. The input voltage 
       \draw[zz] (0.5,2)--(1.7,2);
       \draw (1.7,2)--(3,2)--(3,1.6);
       \node at (1.1,2.4) {$R$};
-      % ideal diode
       \draw (2.75,1.6)--(3.25,1.6)--(3,1.1)--cycle;
       \draw (2.75,1.1)--(3.25,1.1);
       \draw (3,1.1)--(3,0.8);
-      % 5 V battery
-      
-            \draw (2.85,0.8)--(3.15,0.8);
+      \draw (2.85,0.8)--(3.15,0.8);
       \draw (2.7,0.62)--(3.3,0.62);
       \draw (3,0.62)--(3,0)--(0,0);
       \node[right] at (3.35,0.7) {5 V};
-      % input terminals
       \draw[fill=white] (0,2) circle (1.5pt);
       \draw[fill=white] (0,0) circle (1.5pt);
       \draw[<->] (0,0.2)--(0,1.8);
@@ -2158,44 +2090,43 @@ From \eqref{eq:F-angletime},
 &=13.33\text{ ms}
 \end{align}
 
-The following code verifies the solution.
+The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Semiconductor_Cond.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Diode_Conduction.py}}}@*)
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Diode_Conduction.png}
+    \caption{Diode Conduction}
+    \label{fig:EC2025-37-diode-conduction}
+\end{figure}
 
 \item
 In the circuit of the given sequential circuit, the AND gate has a propagation delay of 1 ns. The edge-triggered flip-flops have set-up time 2 ns, hold time 0 ns and clock-to-Q delay 2 ns. The maximum clock frequency (in MHz, rounded off to the nearest integer) with no setup violation is \underline{\hspace{1cm}}.
 \hfill (EC~2025)
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth]
-      % FF1
       \draw (0,-0.8) rectangle (1.2,0.8);
       \node at (0.2,0.4) {$D$};
       \node at (1.0,0.4) {$Q$};
       \node at (1.0,-0.4) {$\overline{Q}$};
       \draw (0.45,-0.8)--(0.6,-0.58)--(0.75,-0.8);
-      % FF2
       \draw (2.2,-0.8) rectangle (3.4,0.8);
       \node at (2.4,0.4) {$D$};
       \node at (3.2,0.4) {$Q$};
       \node at (3.2,-0.4) {$\overline{Q}$};
       \draw (2.65,-0.8)--(2.8,-0.58)--(2.95,-0.8);
-      % FF1 -> FF2
       \draw[->] (1.2,0.4)--(2.2,0.4);
-      % clock
       \draw (0.6,-0.8)--(0.6,-1.5);
       \draw (0.6,-1.5)--(2.8,-1.5)--(2.8,-0.8);
       \fill (0.6,-1.5) circle (1.2pt);
       \node at (0.0,-1.75) {$CLK$};
-      % AND gate
       \draw (4.4,0.6)--(5.0,0.6) arc(90:-90:0.4) --(4.4,-0.2)--cycle;
       \draw (3.4,0.4)--(4.4,0.4);
       \draw (3.95,0)--(4.4,0);
       \node at (3.72,0) {$X$};
-      % feedback from AND output to D of FF1
       \draw (5.4,0.2)--(6.0,0.2)--(6.0,1.9)--(-0.7,1.9)--(-0.7,0.4);
       \draw[->] (-0.7,0.4)--(0,0.4);
     \end{tikzpicture}
@@ -2217,27 +2148,19 @@ f_{\max}&=\frac{1}{5\text{ ns}}
 &=200\text{ MHz}
 \end{align}
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/DAC_Resolution.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Clock_Frequency.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/DAC_Resolution.png}
-    \caption{DAC Resolution}
-    \label{fig:EC2025-38-dac-resolution}
-\end{figure}
 
 \item
 Two resistors are connected in a circuit loop of area $5\text{ m}^2$, as in the given loop circuit. The loop lies in the $x$--$y$ plane. A time-varying magnetic flux density $B\brak{t}=0.5t$ (in Tesla) is applied along the positive $z$-axis. The magnitude of the current $I$ (in Amperes, two decimal places) in the loop is \underline{\hspace{1cm}}.
 \hfill (EC~2025)
 
-
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[font=\footnotesize,>=Stealth,
         zz/.style={decorate,decoration={zigzag,segment length=4pt,amplitude=3pt}}]
-      % loop area (hatched)
       \fill[pattern=north west lines,pattern color=gray!70] (0,0) rectangle (3,2);
       \draw (0,2)--(3,2);
       \draw (0,0)--(3,0);
@@ -2249,13 +2172,10 @@ Two resistors are connected in a circuit loop of area $5\text{ m}^2$, as in the 
       \draw (3,0.65)--(3,0);
       \node[left] at (-0.15,1.1) {$2\,\Omega$};
       \node[right] at (3.15,1.1) {$2\,\Omega$};
-      % current
       \draw[->] (1.9,2)--(1.2,2);
       \node[above] at (1.55,2.0) {$I$};
-      % loop area label
       \node at (1.5,-0.9) {Loop Area};
       \draw[->] (1.2,-0.6) to[bend left=45] (1.6,0.35);
-      % axes
       \draw[dashed,->] (5.4,0.8)--(5.4,2.4) node[above] {$y$};
       \draw[dashed,->] (5.4,0.8)--(6.9,0.8) node[right] {$x$};
       \draw[dashed,->] (5.4,0.8)--(4.7,-0.1) node[below left] {$z$};
@@ -2280,16 +2200,15 @@ I&=\frac{\abs{\mathcal{E}}}{R_{\text{total}}}
 &\approx0.63\text{ A}
 \end{align}
 
-\end{enumerate}
-
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/CMOS_VTC.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Faraday_Induction.py}}}@*)
 \end{lstlisting}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.90\linewidth]{figs/CMOS_VTC.png}
-    \caption{CMOS VTC}
-    \label{fig:EC2025-39-cmos-vtc}
+    \includegraphics[width=0.90\linewidth]{figs/Faraday_Induction.png}
+    \caption{Faraday Induction}
+    \label{fig:EC2025-39-faraday-induction}
 \end{figure}
 
+\end{enumerate}
