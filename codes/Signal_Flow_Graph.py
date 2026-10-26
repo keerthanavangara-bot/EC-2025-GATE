@@ -1,23 +1,22 @@
+import os
+import numpy as np
 import matplotlib.pyplot as plt
+from CoordGeo.line.funcs import line_gen_num
+from CoordGeo.plotting.funcs import label_pts
 
-fig, ax = plt.subplots(figsize=(6, 4))
-nodes = ['R(s)', 'X1', 'X2', 'C(s)']
-x_pos = [0, 1, 2, 3]
-y_pos = [0, 0, 0, 0]
+os.makedirs("figs", exist_ok=True)
 
-ax.scatter(x_pos, y_pos, color='black', s=100)
-for i, txt in enumerate(nodes):
-ax.annotate(txt, (x_pos[i], y_pos[i] + 0.1), ha='center', fontsize=12)
+t = np.linspace(0, 10, 500)
+y = np.vstack((t, 1 - np.exp(-0.8 * t) * (np.cos(1.2 * t) + 0.6 * np.sin(1.2 * t))))
+target = line_gen_num(np.array([[0], [1]]), np.array([[10], [1]]), 2)
 
-ax.annotate('', xy=(1, 0), xytext=(0, 0), arrowprops=dict(arrowstyle='->', lw=1.5))
-ax.annotate('', xy=(2, 0), xytext=(1, 0), arrowprops=dict(arrowstyle='->', lw=1.5))
-ax.annotate('', xy=(3, 0), xytext=(2, 0), arrowprops=dict(arrowstyle='->', lw=1.5))
-
-ax.set_xlim(-0.5, 3.5)
-ax.set_ylim(-0.5, 0.5)
-ax.set_title('Signal Flow Graph')
-ax.axis('off')
-
-plt.tight_layout()
-plt.savefig('../figs/Signal_Flow_Graph.png', bbox_inches='tight')
-plt.close(fig)
+plt.figure(figsize=(8, 5))
+plt.plot(y[0, :], y[1, :], label='System Step Response', color='green')
+plt.plot(target[0, :], target[1, :], 'k--', label='Target Value')
+plt.xlabel('Time (s)')
+plt.ylabel('Output y(t)')
+plt.title('Signal Flow Graph System Response')
+plt.legend()
+plt.grid(True)
+plt.savefig('figs/Signal_Flow_Graph.png')
+plt.close()

@@ -1,19 +1,22 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
-import subprocess, shlex
+from CoordGeo.line.funcs import line_gen_num
+from CoordGeo.plotting.funcs import label_pts
 
-t = np.linspace(0, 2, 200)
-dB_dt = 0.5
-A = 5.0
-R = 4.0
-I = (A * dB_dt) / R * np.ones_like(t)
+os.makedirs("figs", exist_ok=True)
+
+dB_dt, A, R = 0.5, 5.0, 4.0
+I0 = (A * dB_dt) / R
+Iline = line_gen_num(np.array([[0], [I0]]), np.array([[2], [I0]]), 200)
 
 fig, ax = plt.subplots(figsize=(6, 4))
-ax.plot(t, I, label='Induced Current I = 0.63 A')
+ax.plot(Iline[0, :], Iline[1, :], label=f'Induced Current I = {I0:.2f} A')
+ax.set_ylim(0, 1)
 ax.set_xlabel('Time (s)')
 ax.set_ylabel('Current (A)')
-ax.set_title('Induced Loop Current')
+ax.set_title('Induced Loop Current (Q.65)')
 ax.legend()
 ax.grid(True)
 plt.tight_layout()
-plt.savefig("../figs/Faraday_Induction.png")
+plt.savefig("figs/Faraday_Induction.png")
