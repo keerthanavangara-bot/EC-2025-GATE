@@ -24,7 +24,7 @@ ax.stem(Y1[0, :], Y1[1, :], linefmt='b-', markerfmt='bo', basefmt=" ", label='Ou
 ax.stem(Y2[0, :], Y2[1, :], linefmt='r--', markerfmt='rx', basefmt=" ", label='Output y2 for 2x')
 ax.set_xlabel('n')
 ax.set_ylabel('y[n]')
-ax.set_title('Non-linear Response Verification (Q.17)')
+ax.set_title('Non-linear Response Verification')
 ax.legend()
 ax.grid(True)
 plt.tight_layout()
