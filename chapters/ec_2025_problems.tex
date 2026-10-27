@@ -134,19 +134,19 @@ A pot contains two red balls and two blue balls. Two balls are drawn from this p
 \solution
 Choosing two balls at random is the same as selecting each ball independently with probability $\frac{1}{2}$ and keeping the outcomes with exactly two balls selected. Let $B$ be the selection indicator of one ball, with
 \begin{align}
-p_B\sbrak{0}=p_B\sbrak{1}=\frac{1}{2}
+p_B\brak{0}=p_B\brak{1}=\frac{1}{2}
 \end{align}
 The number $X$ of selected red balls is the sum of two independent indicators. From \eqref{eq:F-conv-pmf},
 \begin{align}
-p_X\sbrak{0}&=p_B\sbrak{0}p_B\sbrak{0}=\frac{1}{4}
+p_X\brak{0}&=p_B\brak{0}p_B\brak{0}=\frac{1}{4}
 \\
-p_X\sbrak{1}&=p_B\sbrak{0}p_B\sbrak{1}+p_B\sbrak{1}p_B\sbrak{0}=\frac{1}{2}
+p_X\brak{1}&=p_B\brak{0}p_B\brak{1}+p_B\brak{1}p_B\brak{0}=\frac{1}{2}
 \\
-p_X\sbrak{2}&=p_B\sbrak{1}p_B\sbrak{1}=\frac{1}{4}
+p_X\brak{2}&=p_B\brak{1}p_B\brak{1}=\frac{1}{4}
 \end{align}
 The number $Y$ of selected blue balls has $p_Y=p_X$. For $S=X+Y$, from \eqref{eq:F-conv-pmf},
 \begin{align}
-p_S\sbrak{2}&=p_X\sbrak{0}p_Y\sbrak{2}+p_X\sbrak{1}p_Y\sbrak{1}+p_X\sbrak{2}p_Y\sbrak{0}
+p_S\brak{2}&=p_X\brak{0}p_Y\brak{2}+p_X\brak{1}p_Y\brak{1}+p_X\brak{2}p_Y\brak{0}
 \\
 &=\frac{1}{16}+\frac{1}{4}+\frac{1}{16}
 \\
@@ -154,9 +154,9 @@ p_S\sbrak{2}&=p_X\sbrak{0}p_Y\sbrak{2}+p_X\sbrak{1}p_Y\sbrak{1}+p_X\sbrak{2}p_Y\
 \end{align}
 The two balls have different colours when $X=1$ and $Y=1$. From \eqref{eq:F-indep},
 \begin{align}
-p_X\sbrak{1}p_Y\sbrak{1}&=\frac{1}{4}
+p_X\brak{1}p_Y\brak{1}&=\frac{1}{4}
 \\
-\pr{\text{different colours}}&=\frac{p_X\sbrak{1}p_Y\sbrak{1}}{p_S\sbrak{2}}
+\pr{\text{different colours}}&=\frac{p_X\brak{1}p_Y\brak{1}}{p_S\brak{2}}
 \\
 &=\frac{\frac{1}{4}}{\frac{3}{8}}
 \\
@@ -278,6 +278,24 @@ T\cbrak{x\sbrak{n-k}}&=\brak{h_2*h_1*x}\sbrak{n-k}+b\brak{h_2\sbrak{n}-\delta\sb
 y\sbrak{n-k}&=\brak{h_2*h_1*x}\sbrak{n-k}+b\brak{h_2\sbrak{n-k}-\delta\sbrak{n-k}}
 \end{align}
 These differ, so \eqref{eq:F-ti} fails and the system is time variant.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+$n$ & $y_1[n]$ (for input $x$) & $y_2[n]$ (for input $2x$) \\ \hline
+-2  & 0.0                      & 0.5                      \\ \hline
+-1  & 1.5                      & 2.0                      \\ \hline
+ 0  & 1.5                      & 2.5                      \\ \hline
+ 1  & 1.0                      & 2.0                      \\ \hline
+ 2  & 1.0                      & 2.0                      \\ \hline
+ 3  & 1.0                      & 2.0                      \\ \hline
+ 4  & 1.0                      & 2.0                      \\ \hline
+ 5  & 1.0                      & 2.0                      \\ \hline
+ 6  & 1.0                      & 2.0                      \\ \hline
+\end{tabular}
+\caption{Numerical response values extracted from the graph for inputs $x$ and $2x$}
+\label{tab:graph_values}
+\end{table}
 
 The following code verifies the solution through a plot
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
@@ -341,12 +359,12 @@ The following code verifies the solution through a plot
 Let $i_C$, $i_L$ and $i_R$ be the currents through the capacitor, inductor and resistor in the circuit of the given parallel RLC circuit. The AC admittances are given in Siemens (S). Which one of the following is TRUE?
 \hfill (EC~2025)
 \begin{enumerate}
-	\begin{multicols}{2}
+	
     \item $i_C=0.25\angle180^\circ$ A, $i_L=0.1\angle0^\circ$ A, $i_R=0.2\angle90^\circ$ A
     \item $i_C=4\angle180^\circ$ A, $i_L=10\angle0^\circ$ A, $i_R=5\angle90^\circ$ A
     \item $i_C=0.25\angle270^\circ$ A, $i_L=0.1\angle90^\circ$ A, $i_R=0.2\angle90^\circ$ A
     \item $i_C=4\angle90^\circ$ A, $i_L=10\angle270^\circ$ A, $i_R=5\angle0^\circ$ A
-    \end{multicols}
+    
 \end{enumerate}
 
 \begin{figure}[H]
@@ -402,16 +420,7 @@ $\underline{V}=1\angle90^\circ$ V across it. Using $\underline{I}=\underline{Y}\
 \end{align}
 
 
-The following code verifies the solution through a plot
-\begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/AC_Admittance.py}}}@*)
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/AC_Admittance.png}
-    \caption{AC Admittance}
-    \label{fig:EC2025-7-ac-admittance}
-\end{figure}
+
 
 \item
 A 3-input majority logic gate has inputs $X$, $Y$, $Z$. The output $F$ is logic `1' if two or more inputs are logic `1', and logic `0' if two or more inputs are logic `0'. Which one of the following is a Boolean expression of $F$?
@@ -510,16 +519,11 @@ F&=X+\overline{Y}+1
 \end{align}
 so the circuit is a subtractor.
 
-The following code verifies the solution through a plot
+The following code verifies the solution.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Adder_Subtractor.py}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Adder.c}}}@*)
 \end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/Adder_Subtractor.png}
-    \caption{Adder Subtractor}
-    \label{fig:EC2025-9-adder-subtractor}
-\end{figure}
+
 
 \item
 Consider $f:\mathbb{R}\to\mathbb{R}$ defined by $f\brak{x}=2x^3-3x^2-12x+1$. Which of the following statements is/are correct?
@@ -653,13 +657,13 @@ From the given root-locus plot,
 \begin{align}
 G\brak{s}=\frac{\brak{s+3}\brak{s+4}}{\brak{s+1}\brak{s+2}}
 \end{align}
-From \eqref{eq:F-rootlocus}, at $s_0=-1+\j$,
+From \eqref{eq:F-rootlocus}, at $s_0=-1+j$,
 \begin{align}
-G\brak{s_0}&=\frac{\brak{2+\j}\brak{3+\j}}{\j\brak{1+\j}}
+G\brak{s_0}&=\frac{\brak{2+j}\brak{3+j}}{j\brak{1+j}}
 \\
-&=\frac{5+5\j}{-1+\j}
+&=\frac{5+5j}{-1+j}
 \\
-&=-5\j
+&=-5j
 \end{align}
 which is not real, so $s_0$ is not on the root locus for any $K$.
 
@@ -762,43 +766,95 @@ The following code verifies the solution through a plot
 The function $y\brak{t}$ satisfies $t^2y^{\prime\prime}\brak{t}-2ty^{\prime}\brak{t}+2y\brak{t}=0$, where $y^{\prime}$ and $y^{\prime\prime}$ are the first and second derivatives. Given $y^{\prime}\brak{0}=1$ and $y^{\prime}\brak{1}=-1$, the maximum value of $y\brak{t}$ over $\sbrak{0,1}$ is \underline{\hspace{1cm}} (rounded off to two decimal places).
 \hfill (EC~2025)
 \\
+
+
 \solution
-From \eqref{eq:F-euler-cauchy},
+
+Multiplying by $t^n$ differentiates the transform $n$ times. Using \eqref{eq:F-laplace},
 \begin{align}
-m\brak{m-1}-2m+2&=0
+\mathcal{L}\cbrak{t^2y^{\prime\prime}}
+&=\frac{d^2}{ds^2}\brak{s^2Y-sy\brak{0}-y^{\prime}\brak{0}}
 \\
-\implies\brak{m-1}\brak{m-2}&=0
+&=s^2Y^{\prime\prime}+4sY^{\prime}+2Y
 \\
-\implies y&=C_1t+C_2t^2
+\mathcal{L}\cbrak{ty^{\prime}}
+&=-\frac{d}{ds}\brak{sY-y\brak{0}}
 \\
-y^{\prime}&=C_1+2C_2t
-\end{align}
-Substituting $y^{\prime}\brak{0}=1$ and $y^{\prime}\brak{1}=-1$,
-\begin{align}
-C_1&=1
+&=-sY^{\prime}-Y
 \\
-1+2C_2&=-1
-\\
-\implies C_2&=-1
-\\
-y&=t-t^2
-\end{align}
-From \eqref{eq:F-second},
-\begin{align}
-y^{\prime}&=1-2t=0
-\\
-\implies t&=\frac{1}{2}
-\\
-y_{\max}&=\frac{1}{2}-\frac{1}{4}
-\\
-&=0.25
+\mathcal{L}\cbrak{y}&=Y
 \end{align}
 
-The following code verifies the solution.
+Substituting into $t^2y^{\prime\prime}-2ty^{\prime}+2y=0$,
+\begin{align}
+s^2Y^{\prime\prime}+6sY^{\prime}+6Y&=0
+\end{align}
+
+This is an Euler--Cauchy equation in $s$. Using \eqref{eq:F-euler-cauchy}, assume $Y=s^k$:
+\begin{align}
+k\brak{k-1}+6k+6&=0
+\\
+\implies (k+2)(k+3)&=0
+\\
+\implies Y(s)&=\frac{A}{s^2}+\frac{B}{s^3}
+\end{align}
+
+Taking the inverse Laplace transform,
+\begin{align}
+y(t)&=At+\frac{B}{2}t^2
+\\
+y'(t)&=A+Bt
+\end{align}
+
+Using $y'(0)=1$ and $y'(1)=-1$,
+\begin{align}
+A&=1\\
+1+B&=-1\\
+B&=-2
+\end{align}
+
+Hence,
+\begin{align}
+y(t)&=t-t^2
+\end{align}
+
+From \eqref{eq:F-euler-cauchy}, or by differentiating $y(t)$,
+\begin{align}
+y'(t)&=1-2t=0\\
+t&=\frac12\\
+y''(t)&=-2<0
+\end{align}
+
+Therefore,
+\begin{align}
+y_{\max}&=\frac12-\frac14\\
+&=\boxed{0.25}
+\end{align}
+
+To verify numerically, let $u=y$ and $v=y'$:
+\begin{align}
+u'&=v\\
+v'&=\frac{2tv-2u}{t^2}
+\end{align}
+
+Using Euler's forward difference method \eqref{eq:F-euler},
+\begin{align}
+u_{n+1}&=u_n+hv_n\\
+v_{n+1}&=v_n+h\frac{2t_nv_n-2u_n}{t_n^2}
+\end{align}
+
+Starting from $t_0>0$, Euler's method with shooting satisfies $y'(1)=-1$ and gives $y_{\max}\approx0.25$, matching the analytical result.
+
+The following code verifies the solution through a plot.
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Euler_Cauchy.c}}}@*)
+(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Euler_Cauchy.py}}}@*)
 \end{lstlisting}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.90\linewidth]{figs/Euler_Cauchy.png}
+    \caption{Euler stem plot}
+    \label{fig:EC2025-14-euler-cauchy}
+\end{figure}
 \item
 The generator matrix of a $\brak{6,3}$ binary linear block code is
 \begin{align}
@@ -831,16 +887,7 @@ d_{\min}&=\min_{\vec{c}\neq\vec{0}}w\brak{\vec{c}}
 &=3
 \end{align}
 
-The following code verifies the solution through a plot
-\begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/Linear_Block_Code.py}}}@*)
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/Linear_Block_Code.png}
-    \caption{Linear Block Code}
-    \label{fig:EC2025-15-linear-block-code}
-\end{figure}
+
 
 \item
 All components in the bandpass filter of the given bandpass filter are ideal. The lower $-3$ dB frequency is 1 MHz. The upper $-3$ dB frequency (in MHz, rounded off to the nearest integer) is \underline{\hspace{1cm}}.
@@ -1164,16 +1211,6 @@ C&=\frac{1}{\omega^2L}
 &=25\ \mu\text{F}
 \end{align}
 
-The following code verifies the solution through a plot
-\begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
-(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{\texttt{\detokenize{codes/AC_Meters.py}}}@*)
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.90\linewidth]{figs/AC_Meters.png}
-    \caption{AC Meters}
-    \label{fig:EC2025-20-ac-meters}
-\end{figure}
 
 \item
 The $Z$-parameter matrix of a two-port network relates port voltages and currents by

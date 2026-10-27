@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 from CoordGeo.line.funcs import line_gen_num
 from CoordGeo.plotting.funcs import label_pts
 
-os.makedirs("figs", exist_ok=True)
+# figs folder sits next to the codes folder (not inside it)
+fig_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "figs")
+os.makedirs(fig_dir, exist_ok=True)
 
 # t^2 y'' - 2 t y' + 2 y = 0,  y'(0) = 1,  y'(1) = -1
 # Laplace transform gives  s^2 Y'' + 6 s Y' + 6 Y = 0  ->  Y = A/s^2 + B/s^3
@@ -17,7 +19,10 @@ y_an = np.vstack((t_an, t_an - t_an**2))
 # State (u, v) = (y, y'),  u' = v,   v' = (2 t v - 2 u) / t^2
 # The ODE is singular at t = 0, so start at a small t0 using y = t, y' = 1 (from y'(0) = 1)
 # plus the unknown correction C t^2 ; C is fixed by shooting on y'(1) = -1.
-def euler(C, t0=1e-2, h=1e-5):
+t0, h = 1e-2, 1e-5
+
+
+def euler(C):
     n = int(round((1 - t0) / h))
     t = t0 + h * np.arange(n + 1)
     u = np.zeros(n + 1)
@@ -36,14 +41,12 @@ _, u1, v1 = euler(1.0)
 # Euler's method is linear in the initial data, so y'(1) is linear in C
 C = (-1 - v0[-1]) / (v1[-1] - v0[-1])
 y_eu = u0 + C * (u1 - u0)
-y_num = np.vstack((t, y_eu))
 
 k = np.argmax(y_eu)
 print("Euler: C = %.4f, y_max = %.4f at t = %.3f" % (C, y_eu[k], t[k]))
 print("y_max (rounded) = %.2f" % y_eu[k])
 
 # ---------- Stem plot of y(t) ----------
-t0, h = 1e-2, 1e-5
 t_s = np.arange(0.05, 1.0, 0.05)                      # sample instants
 idx = np.round((t_s - t0) / h).astype(int)
 S = np.vstack((t[idx], y_eu[idx]))                    # (t_k, y_k) from Euler's method
@@ -68,4 +71,4 @@ ax.set_title('Euler-Cauchy equation: stem plot of y(t) on [0, 1]')
 ax.legend(loc='upper right')
 ax.grid(True)
 plt.tight_layout()
-plt.savefig("figs/Euler_Cauchy.png")
+plt.savefig(os.path.join(fig_dir, "Euler_Cauchy.png"))

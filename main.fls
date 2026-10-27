@@ -435,10 +435,6 @@ INPUT ./figs/LTI_System.png
 INPUT ./figs/LTI_System.png
 INPUT ./figs/Fourier_Bound.png
 INPUT ./figs/Fourier_Bound.png
-INPUT ./figs/AC_Admittance.png
-INPUT ./figs/AC_Admittance.png
-INPUT ./figs/Adder_Subtractor.png
-INPUT ./figs/Adder_Subtractor.png
 INPUT ./figs/Cubic_Extrema.png
 INPUT ./figs/Cubic_Extrema.png
 INPUT ./figs/Root_Locus.png
@@ -447,8 +443,8 @@ INPUT ./figs/Z_Transform.png
 INPUT ./figs/Z_Transform.png
 INPUT ./figs/Envelope_Detector.png
 INPUT ./figs/Envelope_Detector.png
-INPUT ./figs/Linear_Block_Code.png
-INPUT ./figs/Linear_Block_Code.png
+INPUT ./figs/Euler_Cauchy.png
+INPUT ./figs/Euler_Cauchy.png
 INPUT ./figs/Bandpass_Filter.png
 INPUT ./figs/Bandpass_Filter.png
 INPUT ./figs/Controller_Stability.png
@@ -457,8 +453,6 @@ INPUT ./figs/Poly_Roots.png
 INPUT ./figs/Poly_Roots.png
 INPUT ./figs/Sampling_Reconstruction.png
 INPUT ./figs/Sampling_Reconstruction.png
-INPUT ./figs/AC_Meters.png
-INPUT ./figs/AC_Meters.png
 INPUT ./figs/ML_Decoder.png
 INPUT ./figs/ML_Decoder.png
 INPUT ./figs/Random_Process.png

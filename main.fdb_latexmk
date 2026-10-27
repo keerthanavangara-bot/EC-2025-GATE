@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1793015298.50876 "main.tex" "main.pdf" "main" 1793015302.90348 0
+["lualatex"] 1793123050.0009 "main.tex" "main.pdf" "main" 1793123054.0655 0
   "/home/vangara-keerthana/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1793014701.7711 127309 4c98d2f049c54f1fa860da8f2be1c9ce ""
   "/home/vangara-keerthana/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1793014702.0671 127652 e57213fe0a9a0ee95c81392a5700528a ""
   "/home/vangara-keerthana/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc" 1793014702.1221 128903 8d9ae7dcabfdd2aaa460b77e196097f6 ""
@@ -373,12 +373,9 @@
   "/usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf" 1255129361 111948 cee9e390fd6d23cfb4d6871ba2a9ee5b ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1791567386 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1791567456 5657936 3364c643fb514820b7dce480c489285f ""
-  "chapters/ec_2025_formulae.tex" 1792666614.21011 14283 d2fead67851301db4e2db2efa29b82ae ""
-  "chapters/ec_2025_problems.tex" 1792684651.37633 76995 1552046994ed397e2e33673c51f01c8c ""
-  "figs/AC_Admittance.png" 1793015231.89418 68596 ccc1aac32161a1e705c9b57eab99eadc ""
-  "figs/AC_Meters.png" 1793015232.57715 30415 edad917e6f70d83e35199e3d3ba11829 ""
+  "chapters/ec_2025_formulae.tex" 1793119010.63368 14682 68483aa07a386e16f033a869ed6e6abe ""
+  "chapters/ec_2025_problems.tex" 1793123020.71189 77544 cdafe2105244ce2794076e928eb70115 ""
   "figs/ADC_Performance.png" 1793015233.31312 44367 7b3a59eb14abc1d88a0e0c395db85aba ""
-  "figs/Adder_Subtractor.png" 1793015234.28407 32895 3b60fc6d8098f32b5889e53317fb4d7c ""
   "figs/Bandpass_Filter.png" 1793015235.31903 32808 9d34865d392e9d7587f01d47a50ebe76 ""
   "figs/Contour_Integral.png" 1793015236.49198 45973 97cb01994dadef5fdbbc21529929ede0 ""
   "figs/Controller_Stability.png" 1793015237.64293 26578 390834ba2800eb9a18d3104b6e9ead80 ""
@@ -387,12 +384,12 @@
   "figs/Diode_Conduction.png" 1793015240.07583 36446 0f34ed853d83a4c475fcbfa469d5bf1f ""
   "figs/Entropy.png" 1793015241.11579 34827 1210280632f92a8b0fad020bb616e94e ""
   "figs/Envelope_Detector.png" 1793015242.13574 38449 6fb571ba800ee31192e5bfd1adf8babd ""
-  "figs/FM_Dev.png" 1793015243.46769 46050 711ff1f4dd92d9a957e3ece737a59534 ""
+  "figs/Euler_Cauchy.png" 1793118746.2518 32423 d7595c344f554f143cc6a2bf2773a379 ""
+  "figs/FM_Dev.png" 1793121636.06831 386323 2b5886d8fff64d7122ea3aeb3b3c41d2 ""
   "figs/Faraday_Induction.png" 1793015242.82071 17601 2e703bc219fab3d86a659fbef6464858 ""
   "figs/Fourier_Bound.png" 1793015244.47964 33325 002a566f06f464bca6acba59ceac11fe ""
   "figs/Integral_Bound.png" 1793015245.26461 31623 ff2513ccabbb48d06ed4cd6c12ffc416 ""
   "figs/LTI_System.png" 1793015246.94554 22134 99e68ca3f072895033c8b38a4dd459d9 ""
-  "figs/Linear_Block_Code.png" 1793015246.05258 21567 ccd929b5df2b27e3e6d51f4cd05b8b7c ""
   "figs/ML_Decoder.png" 1793015249.89042 25957 617f6ba99d394437d57b5b99f2476573 ""
   "figs/Matrix_Rank.png" 1793015248.64847 390065 7a35f025c94943beedd99c9a1a24f747 ""
   "figs/Poly_Roots.png" 1793015250.86237 15626 6323bbcf8a315a53b68c6779023b04ee ""
@@ -410,11 +407,11 @@
   "figs/logo.jpg" 1792677423.3347 382648 cd8c4760ef18efd0782613502d16e226 ""
   "gvv-book.sty" 1792666614.21132 2285 d44b825fd49fb88bd93373453cae7830 ""
   "gvv.sty" 1792666614.21132 4433 7fba4b04353a16e40cf9f36ee17597b2 ""
-  "main.aux" 1793015302.54524 16967 1501f6111a14519f94759ba6d9df9319 "lualatex"
+  "main.aux" 1793123053.65861 16733 cd58f5249a2c9a6ba696e7d6664e4538 "lualatex"
   "main.ind" 1792670480.0812 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1793015302.54624 303 a59528675955e365dc1a8fc1f3895ebc "lualatex"
+  "main.out" 1793123053.65942 303 a59528675955e365dc1a8fc1f3895ebc "lualatex"
   "main.tex" 1792684189.78277 9218 521443a027aecc1e832a7ed1342d8d86 ""
-  "main.toc" 1793015302.54624 217 e75e06793d5daada09ec2f1158ff7516 "lualatex"
+  "main.toc" 1793123053.65942 217 d08e81cad16800f5866691ecd28b3ac0 "lualatex"
   (generated)
   "main.aux"
   "main.idx"
@@ -423,8 +420,8 @@
   "main.pdf"
   "main.toc"
   (rewritten before read)
-["makeindex main.idx"] 1792670479.89679 "main.idx" "main.ind" "main" 1793015302.90319 0
-  "main.idx" 1793015299.95429 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+["makeindex main.idx"] 1792670479.89679 "main.idx" "main.ind" "main" 1793123054.06516 0
+  "main.idx" 1793123051.33442 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "main.ilg"
   "main.ind"

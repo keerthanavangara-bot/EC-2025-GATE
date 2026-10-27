@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025/Debian)  (format=lualatex 2026.10.9)  26 OCT 2026 17:18
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025/Debian)  (format=lualatex 2026.10.9)  27 OCT 2026 23:14
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1935,11 +1935,12 @@ Missing character: There is no ȷ (U+0237) in font cmmi10!
 ) (./chapters/ec_2025_problems.tex
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 .1'
+[12]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 25.
 
-[12]
+[13]
 LaTeX Font Info:    Trying to load font information for TU+pcr on input line 57
 .
 LaTeX Font Info:    No file TUpcr.fd. on input line 57.
@@ -1948,12 +1949,12 @@ LaTeX Font Info:    No file TUpcr.fd. on input line 57.
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 57.
 
-<figs/Matrix_Rank.png, id=317, 1084.05pt x 361.35pt>
+<figs/Matrix_Rank.png, id=338, 1084.05pt x 361.35pt>
 File: figs/Matrix_Rank.png Graphic file (type png)
 <use figs/Matrix_Rank.png>
 Package luatex.def Info: figs/Matrix_Rank.png  used on input line 61.
 (luatex.def)             Requested size: 327.77354pt x 109.25494pt.
-[13]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .1'
 
@@ -1961,12 +1962,12 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 83.
 
 [14<./figs/Matrix_Rank.png>]
-<figs/Series_Convergence.png, id=358, 433.62pt x 289.08pt>
+<figs/Series_Convergence.png, id=362, 433.62pt x 289.08pt>
 File: figs/Series_Convergence.png Graphic file (type png)
 <use figs/Series_Convergence.png>
 Package luatex.def Info: figs/Series_Convergence.png  used on input line 118.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-
+ [15<./figs/Series_Convergence.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 134.
@@ -1977,13 +1978,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 .2'
-[15<./figs/Series_Convergence.png>]
-<figs/Two_balls.png, id=378, 433.62pt x 289.08pt>
+<figs/Two_balls.png, id=382, 433.62pt x 289.08pt>
 File: figs/Two_balls.png Graphic file (type png)
 <use figs/Two_balls.png>
 Package luatex.def Info: figs/Two_balls.png  used on input line 172.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
- [16]
+[16]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 .1'
 
@@ -1994,11 +1994,11 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 .2'
 [17<./figs/Two_balls.png>]
-<figs/FM_Dev.png, id=413, 433.62pt x 289.08pt>
+<figs/FM_Dev.png, id=422, 649.34595pt x 499.3857pt>
 File: figs/FM_Dev.png Graphic file (type png)
 <use figs/FM_Dev.png>
 Package luatex.def Info: figs/FM_Dev.png  used on input line 218.
-(luatex.def)             Requested size: 327.77354pt x 218.52533pt.
+(luatex.def)             Requested size: 327.77354pt x 252.07729pt.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
@@ -2011,20 +2011,20 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.5
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5
 .2'
 [18<./figs/FM_Dev.png>]
-<figs/LTI_System.png, id=437, 433.62pt x 289.08pt>
+<figs/LTI_System.png, id=445, 433.62pt x 289.08pt>
 File: figs/LTI_System.png Graphic file (type png)
 <use figs/LTI_System.png>
-Package luatex.def Info: figs/LTI_System.png  used on input line 288.
+Package luatex.def Info: figs/LTI_System.png  used on input line 306.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
+ [19]
 
-
-LaTeX Warning: Command \j invalid in math mode on input line 294.
+LaTeX Warning: Command \j invalid in math mode on input line 312.
 
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 304.
+(Font)              using `TU/ptm/bx/n' instead on input line 322.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.6
@@ -2032,63 +2032,57 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.6
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.6
 .2'
-[19<./figs/LTI_System.png>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 326.
-
-Missing character: There is no ȷ (U+0237) in font cmmi7!
-Missing character: There is no ȷ (U+0237) in font cmmi7!
-
-LaTeX Warning: Command \j invalid in math mode on input line 326.
+LaTeX Warning: Command \j invalid in math mode on input line 344.
 
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
-<figs/Fourier_Bound.png, id=457, 433.62pt x 289.08pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 344.
+
+Missing character: There is no ȷ (U+0237) in font cmmi7!
+Missing character: There is no ȷ (U+0237) in font cmmi7!
+[20<./figs/LTI_System.png>]
+<figs/Fourier_Bound.png, id=474, 433.62pt x 289.08pt>
 File: figs/Fourier_Bound.png Graphic file (type png)
 <use figs/Fourier_Bound.png>
-Package luatex.def Info: figs/Fourier_Bound.png  used on input line 335.
+Package luatex.def Info: figs/Fourier_Bound.png  used on input line 353.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[20<./figs/Fourier_Bound.png>]
+ [21<./figs/Fourier_Bound.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 392.
+(Font)              using `TU/ptm/bx/n' instead on input line 410.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 402.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 402.
+LaTeX Warning: Command \j invalid in math mode on input line 420.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 
-LaTeX Warning: Command \j invalid in math mode on input line 402.
+LaTeX Warning: Command \j invalid in math mode on input line 420.
+
+Missing character: There is no ȷ (U+0237) in font cmmi10!
+
+LaTeX Warning: Command \j invalid in math mode on input line 420.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.7
 .1'
 
-LaTeX Warning: Command \j invalid in math mode on input line 402.
+LaTeX Warning: Command \j invalid in math mode on input line 420.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
-<figs/AC_Admittance.png, id=473, 505.89pt x 433.62pt>
-File: figs/AC_Admittance.png Graphic file (type png)
-<use figs/AC_Admittance.png>
-Package luatex.def Info: figs/AC_Admittance.png  used on input line 411.
-(luatex.def)             Requested size: 327.77354pt x 280.94981pt.
-[21]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 427.
+(Font)              using `TU/ptm/bx/n' instead on input line 436.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.8
 .1'
-[22<./figs/AC_Admittance.png>]
+[22]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 500.
+(Font)              using `TU/ptm/bx/n' instead on input line 509.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.9
@@ -2099,16 +2093,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.9
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.9
 .3'
-[23]
-<figs/Adder_Subtractor.png, id=521, 433.62pt x 289.08pt>
-File: figs/Adder_Subtractor.png Graphic file (type png)
-<use figs/Adder_Subtractor.png>
-Package luatex.def Info: figs/Adder_Subtractor.png  used on input line 519.
-(luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 535.
+(Font)              using `TU/ptm/bx/n' instead on input line 539.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
@@ -2119,94 +2106,34 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 0.3'
-[24<./figs/Adder_Subtractor.png>]
-<figs/Cubic_Extrema.png, id=541, 433.62pt x 289.08pt>
+[23]
+<figs/Cubic_Extrema.png, id=534, 433.62pt x 289.08pt>
 File: figs/Cubic_Extrema.png Graphic file (type png)
 <use figs/Cubic_Extrema.png>
-Package luatex.def Info: figs/Cubic_Extrema.png  used on input line 567.
+Package luatex.def Info: figs/Cubic_Extrema.png  used on input line 571.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 573.
+LaTeX Warning: Command \j invalid in math mode on input line 577.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
-[25<./figs/Cubic_Extrema.png>]
+[24<./figs/Cubic_Extrema.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 651.
+(Font)              using `TU/ptm/bx/n' instead on input line 655.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 1.1'
-
-LaTeX Warning: Command \j invalid in math mode on input line 656.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-
-LaTeX Warning: Command \j invalid in math mode on input line 663.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-<figs/Root_Locus.png, id=559, 433.62pt x 289.08pt>
+<figs/Root_Locus.png, id=552, 433.62pt x 289.08pt>
 File: figs/Root_Locus.png Graphic file (type png)
 <use figs/Root_Locus.png>
-Package luatex.def Info: figs/Root_Locus.png  used on input line 672.
+Package luatex.def Info: figs/Root_Locus.png  used on input line 676.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[26]
+[25]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 686.
+(Font)              using `TU/ptm/bx/n' instead on input line 690.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
@@ -2217,28 +2144,33 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 2.3'
-[27<./figs/Root_Locus.png>]
-<figs/Z_Transform.png, id=587, 433.62pt x 433.62pt>
+[26<./figs/Root_Locus.png>]
+<figs/Z_Transform.png, id=585, 433.62pt x 433.62pt>
 File: figs/Z_Transform.png Graphic file (type png)
 <use figs/Z_Transform.png>
-Package luatex.def Info: figs/Z_Transform.png  used on input line 709.
+Package luatex.def Info: figs/Z_Transform.png  used on input line 713.
 (luatex.def)             Requested size: 327.77354pt x 327.78802pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 3.1'
-[28<./figs/Z_Transform.png>]
+[27<./figs/Z_Transform.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 737.
+(Font)              using `TU/ptm/bx/n' instead on input line 741.
 
-<figs/Envelope_Detector.png, id=598, 433.62pt x 289.08pt>
+<figs/Envelope_Detector.png, id=596, 433.62pt x 289.08pt>
 File: figs/Envelope_Detector.png Graphic file (type png)
 <use figs/Envelope_Detector.png>
-Package luatex.def Info: figs/Envelope_Detector.png  used on input line 756.
+Package luatex.def Info: figs/Envelope_Detector.png  used on input line 760.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 766--769
+
+ []
+
+
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 765.
+(Font)              using `TU/ptm/bx/n' instead on input line 771.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
@@ -2249,29 +2181,28 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 4.3'
-[29<./figs/Envelope_Detector.png>]
+[28<./figs/Envelope_Detector.png>] [29]
+<figs/Euler_Cauchy.png, id=641, 433.62pt x 289.08pt>
+File: figs/Euler_Cauchy.png Graphic file (type png)
+<use figs/Euler_Cauchy.png>
+Package luatex.def Info: figs/Euler_Cauchy.png  used on input line 854.
+(luatex.def)             Requested size: 327.77354pt x 218.52533pt.
+
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 5.1'
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 810.
+(Font)              using `TU/ptm/bx/n' instead on input line 866.
 
-
+[30<./figs/Euler_Cauchy.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 5.2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 5.3'
-[30]
-<figs/Linear_Block_Code.png, id=637, 433.62pt x 289.08pt>
-File: figs/Linear_Block_Code.png Graphic file (type png)
-<use figs/Linear_Block_Code.png>
-Package luatex.def Info: figs/Linear_Block_Code.png  used on input line 840.
-(luatex.def)             Requested size: 327.77354pt x 218.52533pt.
- [31<./figs/Linear_Block_Code.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 891.
+(Font)              using `TU/ptm/bx/n' instead on input line 938.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
@@ -2282,40 +2213,40 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 6.3'
-<figs/Bandpass_Filter.png, id=651, 433.62pt x 289.08pt>
+[31]
+<figs/Bandpass_Filter.png, id=669, 433.62pt x 289.08pt>
 File: figs/Bandpass_Filter.png Graphic file (type png)
 <use figs/Bandpass_Filter.png>
-Package luatex.def Info: figs/Bandpass_Filter.png  used on input line 927.
+Package luatex.def Info: figs/Bandpass_Filter.png  used on input line 974.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[32]
+ [32<./figs/Bandpass_Filter.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 974.
+(Font)              using `TU/ptm/bx/n' instead on input line 1021.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 7.1'
 
-LaTeX Warning: Command \j invalid in math mode on input line 984.
+LaTeX Warning: Command \j invalid in math mode on input line 1031.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 
-LaTeX Warning: Command \j invalid in math mode on input line 984.
+LaTeX Warning: Command \j invalid in math mode on input line 1031.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
-[33<./figs/Bandpass_Filter.png>]
-<figs/Controller_Stability.png, id=685, 433.62pt x 289.08pt>
+<figs/Controller_Stability.png, id=689, 433.62pt x 289.08pt>
 File: figs/Controller_Stability.png Graphic file (type png)
 <use figs/Controller_Stability.png>
-Package luatex.def Info: figs/Controller_Stability.png  used on input line 999.
-
+Package luatex.def Info: figs/Controller_Stability.png  used on input line 1046
+.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
- [34<./figs/Controller_Stability.png>]
+[33]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1015.
+(Font)              using `TU/ptm/bx/n' instead on input line 1062.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
@@ -2330,42 +2261,42 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 8.4'
 
-LaTeX Warning: Command \j invalid in math mode on input line 1025.
+LaTeX Warning: Command \j invalid in math mode on input line 1072.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
-<figs/Poly_Roots.png, id=699, 433.62pt x 289.08pt>
+<figs/Poly_Roots.png, id=706, 433.62pt x 289.08pt>
 File: figs/Poly_Roots.png Graphic file (type png)
 <use figs/Poly_Roots.png>
-Package luatex.def Info: figs/Poly_Roots.png  used on input line 1036.
+Package luatex.def Info: figs/Poly_Roots.png  used on input line 1083.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-
+[34<./figs/Controller_Stability.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.1
 9.1'
-[35<./figs/Poly_Roots.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1060.
+(Font)              using `TU/ptm/bx/n' instead on input line 1107.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1064.
-
-Missing character: There is no ȷ (U+0237) in font cmmi7!
-Missing character: There is no ȷ (U+0237) in font cmmi7!
-
-LaTeX Warning: Command \j invalid in math mode on input line 1064.
+LaTeX Warning: Command \j invalid in math mode on input line 1111.
 
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
-<figs/Sampling_Reconstruction.png, id=717, 433.62pt x 289.08pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 1111.
+
+Missing character: There is no ȷ (U+0237) in font cmmi7!
+Missing character: There is no ȷ (U+0237) in font cmmi7!
+[35<./figs/Poly_Roots.png>]
+<figs/Sampling_Reconstruction.png, id=739, 433.62pt x 289.08pt>
 File: figs/Sampling_Reconstruction.png Graphic file (type png)
 <use figs/Sampling_Reconstruction.png>
 Package luatex.def Info: figs/Sampling_Reconstruction.png  used on input line 1
-085.
+132.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[36]
+ [36<./figs/Sampling_Reconstruction.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1143.
+(Font)              using `TU/ptm/bx/n' instead on input line 1190.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2376,18 +2307,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 0.3'
-[37<./figs/Sampling_Reconstruction.png>]
-<figs/AC_Meters.png, id=750, 433.62pt x 289.08pt>
-File: figs/AC_Meters.png Graphic file (type png)
-<use figs/AC_Meters.png>
-Package luatex.def Info: figs/AC_Meters.png  used on input line 1173.
-(luatex.def)             Requested size: 327.77354pt x 218.52533pt.
- [38<./figs/AC_Meters.png>]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 1.1'
+[37]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1236.
+(Font)              using `TU/ptm/bx/n' instead on input line 1273.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2398,10 +2324,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 1.4'
-[39]
+[38]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1278.
+(Font)              using `TU/ptm/bx/n' instead on input line 1315.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2418,18 +2344,18 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 2.5'
-<figs/ML_Decoder.png, id=789, 433.62pt x 289.08pt>
+<figs/ML_Decoder.png, id=796, 433.62pt x 289.08pt>
 File: figs/ML_Decoder.png Graphic file (type png)
 <use figs/ML_Decoder.png>
-Package luatex.def Info: figs/ML_Decoder.png  used on input line 1299.
+Package luatex.def Info: figs/ML_Decoder.png  used on input line 1336.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 3.1'
-[40<./figs/ML_Decoder.png>]
+[39<./figs/ML_Decoder.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1325.
+(Font)              using `TU/ptm/bx/n' instead on input line 1362.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2440,15 +2366,15 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 3.4'
-<figs/Random_Process.png, id=806, 433.62pt x 289.08pt>
+<figs/Random_Process.png, id=813, 433.62pt x 289.08pt>
 File: figs/Random_Process.png Graphic file (type png)
 <use figs/Random_Process.png>
-Package luatex.def Info: figs/Random_Process.png  used on input line 1350.
+Package luatex.def Info: figs/Random_Process.png  used on input line 1387.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[41]
+[40]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1366.
+(Font)              using `TU/ptm/bx/n' instead on input line 1403.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2456,15 +2382,15 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 4.2'
-<figs/ADC_Performance.png, id=823, 578.16pt x 361.35pt>
+<figs/ADC_Performance.png, id=828, 578.16pt x 361.35pt>
 File: figs/ADC_Performance.png Graphic file (type png)
 <use figs/ADC_Performance.png>
-Package luatex.def Info: figs/ADC_Performance.png  used on input line 1386.
+Package luatex.def Info: figs/ADC_Performance.png  used on input line 1423.
 (luatex.def)             Requested size: 327.77354pt x 204.85786pt.
-[42<./figs/Random_Process.png>] [43<./figs/ADC_Performance.png>]
+[41<./figs/Random_Process.png>] [42<./figs/ADC_Performance.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1472.
+(Font)              using `TU/ptm/bx/n' instead on input line 1509.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2472,23 +2398,23 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 5.2'
-[44]
+[43]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1531.
+(Font)              using `TU/ptm/bx/n' instead on input line 1568.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 6.1'
-<figs/Sheet_Charge.png, id=866, 433.62pt x 289.08pt>
+<figs/Sheet_Charge.png, id=872, 433.62pt x 289.08pt>
 File: figs/Sheet_Charge.png Graphic file (type png)
 <use figs/Sheet_Charge.png>
-Package luatex.def Info: figs/Sheet_Charge.png  used on input line 1549.
+Package luatex.def Info: figs/Sheet_Charge.png  used on input line 1586.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[45]
+[44]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1565.
+(Font)              using `TU/ptm/bx/n' instead on input line 1602.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2496,20 +2422,20 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 8.1'
-[46<./figs/Sheet_Charge.png>]
+[45<./figs/Sheet_Charge.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1603.
+(Font)              using `TU/ptm/bx/n' instead on input line 1640.
 
-<figs/Integral_Bound.png, id=906, 433.62pt x 289.08pt>
+<figs/Integral_Bound.png, id=912, 433.62pt x 289.08pt>
 File: figs/Integral_Bound.png Graphic file (type png)
 <use figs/Integral_Bound.png>
-Package luatex.def Info: figs/Integral_Bound.png  used on input line 1621.
+Package luatex.def Info: figs/Integral_Bound.png  used on input line 1658.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[47<./figs/Integral_Bound.png>]
+[46<./figs/Integral_Bound.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1637.
+(Font)              using `TU/ptm/bx/n' instead on input line 1674.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -2520,31 +2446,31 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 9.3'
-<figs/Contour_Integral.png, id=928, 433.62pt x 433.62pt>
+<figs/Contour_Integral.png, id=934, 433.62pt x 433.62pt>
 File: figs/Contour_Integral.png Graphic file (type png)
 <use figs/Contour_Integral.png>
-Package luatex.def Info: figs/Contour_Integral.png  used on input line 1660.
+Package luatex.def Info: figs/Contour_Integral.png  used on input line 1697.
 (luatex.def)             Requested size: 327.77354pt x 327.78802pt.
-[48]
+[47]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 0.1'
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1678.
+(Font)              using `TU/ptm/bx/n' instead on input line 1715.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 0.2'
-[49<./figs/Contour_Integral.png>]
-<figs/State_Space.png, id=955, 433.62pt x 289.08pt>
+[48<./figs/Contour_Integral.png>]
+<figs/State_Space.png, id=962, 433.62pt x 289.08pt>
 File: figs/State_Space.png Graphic file (type png)
 <use figs/State_Space.png>
-Package luatex.def Info: figs/State_Space.png  used on input line 1703.
+Package luatex.def Info: figs/State_Space.png  used on input line 1740.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
- [50<./figs/State_Space.png>]
+ [49<./figs/State_Space.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1719.
+(Font)              using `TU/ptm/bx/n' instead on input line 1756.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2561,23 +2487,23 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 1.5'
-<figs/Entropy.png, id=973, 433.62pt x 289.08pt>
+<figs/Entropy.png, id=979, 433.62pt x 289.08pt>
 File: figs/Entropy.png Graphic file (type png)
 <use figs/Entropy.png>
-Package luatex.def Info: figs/Entropy.png  used on input line 1742.
+Package luatex.def Info: figs/Entropy.png  used on input line 1779.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 1753.
+LaTeX Warning: Command \j invalid in math mode on input line 1790.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 
-LaTeX Warning: Command \j invalid in math mode on input line 1753.
+LaTeX Warning: Command \j invalid in math mode on input line 1790.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
 
-LaTeX Warning: Command \j invalid in math mode on input line 1753.
+LaTeX Warning: Command \j invalid in math mode on input line 1790.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
@@ -2585,34 +2511,34 @@ Missing character: There is no ȷ (U+0237) in font cmmi7!
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 2.1'
 
-LaTeX Warning: Command \j invalid in math mode on input line 1753.
+LaTeX Warning: Command \j invalid in math mode on input line 1790.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
-[51<./figs/Entropy.png>]
+[50<./figs/Entropy.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1764.
+(Font)              using `TU/ptm/bx/n' instead on input line 1801.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1776.
-
-Missing character: There is no ȷ (U+0237) in font cmmi10!
-Missing character: There is no ȷ (U+0237) in font cmmi7!
-
-LaTeX Warning: Command \j invalid in math mode on input line 1776.
+LaTeX Warning: Command \j invalid in math mode on input line 1813.
 
 Missing character: There is no ȷ (U+0237) in font cmmi10!
 Missing character: There is no ȷ (U+0237) in font cmmi7!
-<figs/Time_Scaling.png, id=991, 433.62pt x 289.08pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 1813.
+
+Missing character: There is no ȷ (U+0237) in font cmmi10!
+Missing character: There is no ȷ (U+0237) in font cmmi7!
+<figs/Time_Scaling.png, id=996, 433.62pt x 289.08pt>
 File: figs/Time_Scaling.png Graphic file (type png)
 <use figs/Time_Scaling.png>
-Package luatex.def Info: figs/Time_Scaling.png  used on input line 1785.
+Package luatex.def Info: figs/Time_Scaling.png  used on input line 1822.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[52] [53<./figs/Time_Scaling.png>]
+[51] [52<./figs/Time_Scaling.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1907.
+(Font)              using `TU/ptm/bx/n' instead on input line 1944.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2620,15 +2546,15 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 3.2'
-<figs/Signal_Flow_Graph.png, id=1021, 578.16pt x 361.35pt>
+<figs/Signal_Flow_Graph.png, id=1027, 578.16pt x 361.35pt>
 File: figs/Signal_Flow_Graph.png Graphic file (type png)
 <use figs/Signal_Flow_Graph.png>
-Package luatex.def Info: figs/Signal_Flow_Graph.png  used on input line 1939.
+Package luatex.def Info: figs/Signal_Flow_Graph.png  used on input line 1976.
 (luatex.def)             Requested size: 327.77354pt x 204.85786pt.
-[54]
+[53]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1948.
+(Font)              using `TU/ptm/bx/n' instead on input line 1985.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2642,17 +2568,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 4.4'
-<figs/Dice_Sum.png, id=1033, 433.62pt x 289.08pt>
+<figs/Dice_Sum.png, id=1039, 433.62pt x 289.08pt>
 File: figs/Dice_Sum.png Graphic file (type png)
 <use figs/Dice_Sum.png>
-Package luatex.def Info: figs/Dice_Sum.png  used on input line 1966.
+Package luatex.def Info: figs/Dice_Sum.png  used on input line 2003.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[55<./figs/Signal_Flow_Graph.png>]
+[54<./figs/Signal_Flow_Graph.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 5.1'
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 1979.
+(Font)              using `TU/ptm/bx/n' instead on input line 2016.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2660,25 +2586,25 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 5.3'
-<figs/Vector_Projection.png, id=1045, 433.62pt x 433.62pt>
+<figs/Vector_Projection.png, id=1051, 433.62pt x 433.62pt>
 File: figs/Vector_Projection.png Graphic file (type png)
 <use figs/Vector_Projection.png>
-Package luatex.def Info: figs/Vector_Projection.png  used on input line 1999.
+Package luatex.def Info: figs/Vector_Projection.png  used on input line 2036.
 (luatex.def)             Requested size: 327.77354pt x 327.78802pt.
-[56<./figs/Dice_Sum.png>]
+[55<./figs/Dice_Sum.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 6.1'
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 2012.
+(Font)              using `TU/ptm/bx/n' instead on input line 2049.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 6.2'
-[57<./figs/Vector_Projection.png>]
+[56<./figs/Vector_Projection.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 2073.
+(Font)              using `TU/ptm/bx/n' instead on input line 2110.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2686,24 +2612,24 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 7.2'
-[58]
-<figs/Diode_Conduction.png, id=1094, 433.62pt x 289.08pt>
+[57]
+<figs/Diode_Conduction.png, id=1100, 433.62pt x 289.08pt>
 File: figs/Diode_Conduction.png Graphic file (type png)
 <use figs/Diode_Conduction.png>
-Package luatex.def Info: figs/Diode_Conduction.png  used on input line 2099.
+Package luatex.def Info: figs/Diode_Conduction.png  used on input line 2136.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 2137.
+(Font)              using `TU/ptm/bx/n' instead on input line 2174.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 8.1'
-[59<./figs/Diode_Conduction.png>]
+[58<./figs/Diode_Conduction.png>]
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 2187.
+(Font)              using `TU/ptm/bx/n' instead on input line 2224.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
@@ -2711,12 +2637,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
 9.2'
-<figs/Faraday_Induction.png, id=1108, 433.62pt x 289.08pt>
+<figs/Faraday_Induction.png, id=1114, 433.62pt x 289.08pt>
 File: figs/Faraday_Induction.png Graphic file (type png)
 <use figs/Faraday_Induction.png>
-Package luatex.def Info: figs/Faraday_Induction.png  used on input line 2209.
+Package luatex.def Info: figs/Faraday_Induction.png  used on input line 2246.
 (luatex.def)             Requested size: 327.77354pt x 218.52533pt.
-[60]) [61<./figs/Faraday_Induction.png>] (./main.aux)
+[59]) [60<./figs/Faraday_Induction.png>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2730,15 +2656,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56191 strings out of 476076
+ 56177 strings out of 476076
  125129,1977958 words of node,token memory allocated
  1221 words of node memory still in use:
    24 hlist, 2 vlist, 10 rule, 2 glue, 4 kern, 8 sub_mlist, 1 glyph, 77 attribut
 e, 68 glue_spec, 77 attribute_list, 2 write, 16 pdf_literal, 16 pdf_colorstack n
 odes
-   avail lists: 1:1,2:3907,3:1976,4:68,5:486,6:37,7:3831,8:60,9:1534,10:14,11:12
+   avail lists: 1:1,2:3907,3:1976,4:81,5:486,6:45,7:4893,8:60,9:1534,10:19,11:12
 2
- 76604 multiletter control sequences out of 65536+600000
+ 76587 multiletter control sequences out of 65536+600000
  74 fonts using 4941671 bytes
  107i,18n,113p,1193b,1555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texm
@@ -2762,10 +2688,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (61 pages, 1836511 bytes).
+Output written on main.pdf (60 pages, 2131829 bytes).
 
-PDF statistics: 1245 PDF objects out of 1440 (max. 8388607)
- 1057 compressed objects within 11 object streams
- 680 named destinations out of 1000 (max. 131072)
+PDF statistics: 1250 PDF objects out of 1440 (max. 8388607)
+ 1069 compressed objects within 11 object streams
+ 692 named destinations out of 1000 (max. 131072)
  210 words of extra memory for PDF output out of 10000 (max. 100000000)
 
