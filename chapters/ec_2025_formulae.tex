@@ -34,9 +34,9 @@ L < 1 &\implies \text{the series converges}
 \end{align}
 \item Expectation.
 \begin{align}
-E\sbrak{X} &= \sum_{x} x \, \pr{X = x}
+E\brak{X} &= \sum_{x} x \, \pr{X = x}
 \\
-E\sbrak{X_1 + X_2} &= E\sbrak{X_1} + E\sbrak{X_2}
+E\brak{X_1 + X_2} &= E\brak{X_1} + E\brak{X_2}
 \label{eq:F-expect}
 \end{align}
 \item Marginal PMF.
@@ -51,7 +51,7 @@ E\sbrak{X_1 + X_2} &= E\sbrak{X_1} + E\sbrak{X_2}
 \end{align}
 \item PMF of a Sum of Independent Random Variables.
 \begin{align}
-p_{X+Y}\sbrak{k} &= \sum_{i} p_X\sbrak{i}\, p_Y\sbrak{k - i}
+p_{X+Y}\brak{k} &= \sum_{i} p_X\brak{i}\, p_Y\brak{k - i}
 \label{eq:F-conv-pmf}
 \end{align}
 \solution The event $\cbrak{X + Y = k}$ is the union over $i$ of the disjoint events $\cbrak{X = i, Y = k - i}$. Hence
@@ -60,16 +60,16 @@ p_{X+Y}\sbrak{k} &= \sum_{i} p_X\sbrak{i}\, p_Y\sbrak{k - i}
 \\
 &= \sum_{i} \pr{X = i}\pr{Y = k - i}
 \\
-&= \sum_{i} p_X\sbrak{i}\, p_Y\sbrak{k - i}
+&= \sum_{i} p_X\brak{i}\, p_Y\brak{k - i}
 \end{align}
 upon using \eqref{eq:F-indep}.
 \item Uncorrelated Random Variables. For independent, zero-mean, unit-variance $a_n$ and $a_m$, $n \ne m$,
 \begin{align}
-E\sbrak{a_n a_m} &= E\sbrak{a_n}E\sbrak{a_m} = 0
+E\brak{a_n a_m} &= E\brak{a_n}E\brak{a_m} = 0
 \\
-E\sbrak{a_n^2} &= 1
+E\brak{a_n^2} &= 1
 \\
-E\sbrak{a_n a_m} &= \delta_{n - m}
+E\brak{a_n a_m} &= \delta_{n - m}
 \label{eq:F-uncorr}
 \end{align}
 \item Gaussian Symmetry. The density of a zero-mean Gaussian random variable $N$ is symmetric, so
@@ -456,4 +456,25 @@ x^* &= \frac{\vec{a}^\top \vec{b}}{\vec{a}^\top \vec{a}}
 z &= \frac{\pi}{2} + k\pi, \quad k \in \mathbb{Z}
 \label{eq:F-sec}
 \end{align}
+\item Laplace Transform.
+\begin{align}
+\mathcal{L}\{y(t)\} &= Y(s)
+\\
+\mathcal{L}\{y'(t)\} &= sY(s)-y(0)
+\\
+\mathcal{L}\{y''(t)\} &= s^2Y(s)-sy(0)-y'(0)
+\\
+\mathcal{L}\{t f(t)\} &= -\frac{d}{ds}F(s)
+\\
+\mathcal{L}\{t^2 f(t)\} &= \frac{d^2}{ds^2}F(s)
+\label{eq:F-laplace}
+\end{align}
+\item Euler's Forward Difference Method.
+
+\begin{align}
+t_{n+1} &= t_n+h \\
+y_{n+1} &= y_n+h y'_n
+\label{eq:F-euler}
+\end{align}
+
 \end{enumerate}
